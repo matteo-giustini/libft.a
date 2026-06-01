@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_memmove.c                                      :+:      :+:    :+:    */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                   +:+ +:+         +:+      */
 /*   By: mgiustin <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/05/21 18:04:49 by mgiustin         #+#    #+#              */
-/*   Updated: 2026/06/01 11:59:34 by mgiustin        ###   ########.fr        */
+/*   Updated: 2026/06/01 13:24:11 by mgiustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
-	*d = (unsigned char *) dest;
-	*s = (unsigned char *) src;
+	d = (unsigned char *) dest;
+	s = (unsigned char *) src;
 	if (d < s)
 	{
 		while (n--)

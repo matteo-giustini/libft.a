@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_split.c                                        :+:      :+:    :+:    */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                   +:+ +:+         +:+      */
 /*   By: mgiustin <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/06/01 11:01:44 by mgiustin         #+#    #+#              */
-/*   Updated: 2026/06/01 11:59:41 by mgiustin        ###   ########.fr        */
+/*   Updated: 2026/06/01 13:22:01 by mgiustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	words_count(char const *s, char c)
 	return (words);
 }
 
-void	free_matrix(char **mtrx, int j)
+void	*free_matrix(char **mtrx, int j)
 {
 	while (j > 0)
 	{
@@ -39,6 +39,7 @@ void	free_matrix(char **mtrx, int j)
 		free(mtrx[j]);
 	}
 	free(mtrx);
+	return (NULL);
 }
 
 void	*fill_words(char **mtrx, char const *s, char c)

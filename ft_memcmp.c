@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_memcmp.c                                       :+:      :+:    :+:    */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                   +:+ +:+         +:+      */
 /*   By: mgiustin <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/06/01 11:00:22 by mgiustin         #+#    #+#              */
-/*   Updated: 2026/06/01 11:59:32 by mgiustin        ###   ########.fr        */
+/*   Updated: 2026/06/01 13:22:40 by mgiustin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*p1;
 	const unsigned char	*p2;
 
-	*p1 = (const unsigned char *) s1;
-	*p2 = (const unsigned char *) s2;
+	p1 = (const unsigned char *) s1;
+	p2 = (const unsigned char *) s2;
 	while (n > 0)
 	{
 		if (*p1 != *p2)
