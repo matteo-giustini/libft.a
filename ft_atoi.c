@@ -19,9 +19,9 @@ int	atoi(const char *nptr)
 
 	sign = 1;
 	num = 0;
-	while (*nptr == ' ' || *nptr == '\t' || *nptr == '\f' ||
-			*nptr == '\n' || *nptr == '\r' || *nptr == '\v')
-	nptr++;
+	while (*nptr == ' ' || *nptr == '\t' || *nptr == '\f'
+		|| *nptr == '\n' || *nptr == '\r' || *nptr == '\v')
+		nptr++;
 	if (*nptr == '-')
 	{
 		sign = -1;

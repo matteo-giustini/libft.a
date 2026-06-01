@@ -57,15 +57,10 @@ void	*fill_words(char **mtrx, char const *s, char c)
 			break ;
 		start = i;
 		while (s[i] && s[i] != c)
-		{
 			i++;
-		}
 		mtrx[j] = ft_substr(s, start, i - start);
 		if (!mtrx[j])
-		{
-			free_matrix(mtrx, j);
-			return (NULL);
-		}
+			return (free_matrix(mtrx, j));
 		j++;
 	}
 	mtrx[j] = NULL;
