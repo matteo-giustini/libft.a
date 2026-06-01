@@ -3,13 +3,12 @@
 /*                                                       :::      ::::::::    */
 /*   ft_strmapi.c                                      :+:      :+:    :+:    */
 /*                                                   +:+ +:+         +:+      */
-/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*   By: mgiustin <marvin@42.fr>                   #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
-/*   Created: 2026/06/01 11:02:50 by username         #+#    #+#              */
-/*   Updated: 2026/06/01 11:16:59 by username        ###   ########.fr        */
+/*   Created: 2026/06/01 11:02:50 by mgiustin         #+#    #+#              */
+/*   Updated: 2026/06/01 11:59:53 by mgiustin        ###   ########.fr        */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
