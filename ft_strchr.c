@@ -1,37 +1,22 @@
-//#include<stdio.h>
-//#include <string.h>
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_strchr.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/06/01 11:01:56 by username         #+#    #+#              */
+/*   Updated: 2026/06/01 11:14:55 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 
-char *ft_strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
-    while(*s != '\0' && (char)c != *s)
-        s++;
-    if((char)c == *s)
-        return((char *)s);
-    return(0);
-}
-
-/* int main(void)
-{
-	char stringa[] = "Navigare nel codice C";
-	char *risultato;
-
-	// Cerca la prima 'e' nella stringa
-	risultato = ft_strchr(stringa, 'e');
-
-	// Controlla se il return NON è NULL (carattere trovato)
-	if (risultato != 0)
-	{
-		printf("Carattere trovato!\n");
-		printf("Stringa a partire dal carattere trovato: %s\n", risultato);
-		
-		// Modifica la stringa originale partendo da quel punto
-		*risultato = 'X'; 
-		printf("Stringa modificata: %s\n", stringa);
-	}
-	else
-	{
-		printf("Carattere non trovato.\n");
-	}
+	while (*s != '\0' && (char) c != *s)
+		s++;
+	if ((char) c == *s)
+		return ((char *) s);
 	return (0);
-} */
+}

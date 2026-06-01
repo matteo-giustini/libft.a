@@ -1,17 +1,18 @@
-//#include<stdio.h>
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_bzero.c                                        :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/05/31 18:56:57 by username         #+#    #+#              */
+/*   Updated: 2026/06/01 11:11:32 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 
-void ft_bzero(void *s, size_t n)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
-    ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }
-/* 
- int main()
-{
-    char str []= "Hello!\0";
-
-    ft_bzero(str, 6);
-    printf("%s\n", str);
-
-}
-  */

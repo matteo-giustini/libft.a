@@ -1,23 +1,26 @@
-//#include<stdio.h>
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_memcpy.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/06/01 11:00:31 by username         #+#    #+#              */
+/*   Updated: 2026/06/01 11:12:33 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 
-void *ft_memcpy(void *dest, const void *src, size_t n)
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-    char *d = dest;
-    const char *s = src;
+	char		*d = dest;
+	const char	*s = src;
 
-    while(n > 0)
-    {
-        *d++ = *s++;
-        n--;
-    }
-    return(dest);
+	while (n > 0)
+	{
+		*d++ = *s++;
+		n--;
+	}
+	return (dest);
 }
-
-/* int main()
-{
-    char src[] = "Helloqwertyuiop";
-    char dest[] = "WWWWorld";
-
-    printf("%s\n", (char *)ft_memcpy(dest, src, 12));
-} */

@@ -1,21 +1,25 @@
-//#include<stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_strlen.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/06/01 11:02:45 by username         #+#    #+#              */
+/*   Updated: 2026/06/01 11:16:53 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_strlen(const char *str)
+#include "libft.h"
+
+int	ft_strlen(const char *str)
 {
-    int len = 0;
+	int	len = 0;
 
-     while(*str)
-     {
-        str++;
-        len++;
-     }
-     return(len);
+	while (*str)
+	{
+		str++;
+		len++;
+	}
+	return (len);
 }
-/* 
-int main()
-{
-    char str[] = "Hello!";
-
-    printf("%d\n", ft_strlen(str));
-    return(0);
-} */

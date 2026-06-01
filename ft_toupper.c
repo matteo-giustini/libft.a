@@ -1,9 +1,20 @@
-//#include<stdio.h>
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_toupper.c                                      :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: username <username@student.42tokyo.jp>    #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/06/01 11:03:43 by username         #+#    #+#              */
+/*   Updated: 2026/06/01 11:18:07 by username        ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
 
-int toupper(int c)
+#include "libft.h"
+
+int	toupper(int c)
 {
-    if(c >= 'a' && c <= 'z')
-        return(c - 32);
-    return(c);
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }
