@@ -14,10 +14,6 @@ make
 
 To compile the library including the linked list utility functions (bonus part):
 
-```bash
-make bonus
-```
-
 ### Available Rules
 * `make` or `make all`: Compiles the source files and generates the `libft.a` archive.
 * `make clean`: Removes all object files (`.o`) generated during compilation.
